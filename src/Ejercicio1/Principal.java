@@ -29,11 +29,12 @@ public class Principal {
 		profesores.add(new Profesor(
 			"Teresa",
 			"Titular de Lengua",
+			60,
 			36));
 
 		profesores.add(new Profesor(
 			"Leocadia",
-			60,
+			72,
 			"Titular de Fisicoquímica",
 			48));
 		}
