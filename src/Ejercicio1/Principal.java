@@ -38,7 +38,7 @@ public class Principal {
 			48));
 		}
 	
-		Iterator<Profesor> it = profesores.iterator();
+		Iterator<Profesor> profesores_it = profesores.iterator();
 	
 		System.out.println(profesores_it.next());
 	}
