@@ -4,32 +4,31 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Principal {
-	
 	public static void mainEjercicio1_a() {
 		ArrayList<Profesor> profesores = new ArrayList<Profesor>();
 
 		profesores.add(new Profesor(
 			"Pepino",
 			24,
-			"Suplente de Geografía",
+			"Suplente de Geografia",
 			0));
 
 		profesores.add(new Profesor(
 			"Pepito",
 			36,
-			"Suplente de Geología",
+			"Suplente de Geologia",
 			12));
 
 		profesores.add(new Profesor(
 			"Bartolo",
 			48,
-			"Titular de Matemática",
+			"Titular de Matematica",
 			24));
 
 		profesores.add(new Profesor(
 			"Teresa",
-			"Titular de Lengua",
 			60,
+			"Titular de Lengua",
 			36));
 
 		profesores.add(new Profesor(
@@ -38,10 +37,10 @@ public class Principal {
 			"Titular de Fisicoquímica",
 			48));
 		}
-
-		Iterator<String> it = profesores.iterator();
-		
-		System.out.println(it.next());
+	
+		Iterator<Profesor> it = profesores.iterator();
+	
+		System.out.println(profesores_it.next());
 	}
 
 	public static void main(String[] args) {
