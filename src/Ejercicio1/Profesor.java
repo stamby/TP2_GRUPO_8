@@ -4,7 +4,19 @@ public class Profesor extends Empleado {
 	private String cargo;
 	private int antiguedadDocente;
 	
-	Profesor() {
+	Profesor(String nombre, int edad, String cargo, int antiguedadDocente) {
+		this.setNombre(nombre);
+		this.setEdad(edad);
+		this.setCargo(cargo);
+		this.setAntiguedadDocente(antiguedadDocente);
+	}
+
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
+	}
+
+	public void setAntiguedadDocente(String antiguedadDocente) {
+		this.antiguedadDocente = antiguedadDocente;
 	}
 	
 	@Override
