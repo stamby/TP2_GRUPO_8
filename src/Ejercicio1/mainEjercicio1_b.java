@@ -26,6 +26,15 @@ public class mainEjercicio1_b {
 			Profesor prof = it.next();
 			System.out.println(prof.toString());
 		}
+		
+		Profesor Profe6 = new Profesor("Julio",42,"Matematica",12);
+		Profesor Profe7 = new Profesor("Julio",42,"Matematica",12);
+		
+		
+		if (Profe6.equals(Profe7)) {
+			System.out.println("Es el Mismo Profesor.");
+		}
+		else System.out.println("No es el mismo Profesor.");
 	}
 
 }
