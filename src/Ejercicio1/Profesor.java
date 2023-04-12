@@ -4,9 +4,12 @@ public class Profesor extends Empleado {
 	private String cargo;
 	private int antiguedadDocente;
 	
-	Profesor(String nombre, int edad, String cargo, int antiguedadDocente) {
-		this.setNombre(nombre);
-		this.setEdad(edad);
+	public Profesor() {
+		super();
+	}
+	
+	public Profesor(String nombre, int edad, String cargo, int antiguedadDocente) {
+		super(nombre, edad);
 		this.setCargo(cargo);
 		this.setAntiguedadDocente(antiguedadDocente);
 	}
@@ -15,24 +18,15 @@ public class Profesor extends Empleado {
 		this.cargo = cargo;
 	}
 
-	public void setAntiguedadDocente(String antiguedadDocente) {
-		this.antiguedadDocente = antiguedadDocente;
+	public void setAntiguedadDocente(int antiguedadDocente2) {
+		this.antiguedadDocente = antiguedadDocente2;
 	}
 	
 	@Override
 	public String toString() {
-		return "Profesor ID=" + id
-				+ ", NOMBRE=" + nombre
-				+ ", EDAD=" + edad
+		return "Profesor " 
+				+ super.toString()
 				+ ", CARGO=" + cargo
 				+ ", ANTIGUEDAD_DOCENTE=" + antiguedadDocente;
-	}
-
-	@Override
-	public boolean equals(Profesor p) {
-		return (this.nombre == p.nombre
-				&& this.edad == p.edad
-				&& this.cargo == p.cargo
-				&& this.antiguedadDocente == p.antiguedadDocente);
 	}
 }

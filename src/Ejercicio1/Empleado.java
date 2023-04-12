@@ -49,7 +49,7 @@ public class Empleado {
 
 	@Override
 	public String toString() {
-		return "Empleado ID=" + id + ", NOMBRE=" + nombre + ", EDAD=" + edad;
+		return "ID=" + id + ", NOMBRE=" + nombre + ", EDAD=" + edad;
 	} 
 	
 }
