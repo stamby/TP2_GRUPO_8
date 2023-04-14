@@ -2,7 +2,7 @@ package Ejercicio2;
 import java.util.Date;
 
 public class ProductoFrescos extends Producto {
-	private Date fechaEnvasado; 
+	private String fechaEnvasado; 
 	private String PaisOrigen; 
 	
 	public ProductoFrescos() {
@@ -11,18 +11,18 @@ public class ProductoFrescos extends Producto {
 		PaisOrigen = "Desconocido";
 	}
 
-	public ProductoFrescos(Date fechaCaducidad, int NumLote, Date fechaEnvasado,String PaisOrigen) {
+	public ProductoFrescos(String fechaCaducidad, int NumLote, Date fechaEnvasado,String PaisOrigen) {
 		super(fechaCaducidad, NumLote);
 		this.fechaEnvasado=fechaEnvasado; 
 		this.PaisOrigen=PaisOrigen;
 		// TODO Auto-generated constructor stub
 	}
 
-	public Date getFechaEnvasado() {
+	public String getFechaEnvasado() {
 		return fechaEnvasado;
 	}
 
-	public void setFechaEnvasado(Date fechaEnvasado) {
+	public void setFechaEnvasado(String fechaEnvasado) {
 		this.fechaEnvasado = fechaEnvasado;
 	}
 

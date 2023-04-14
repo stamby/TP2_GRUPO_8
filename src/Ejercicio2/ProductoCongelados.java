@@ -10,7 +10,7 @@ public class ProductoCongelados extends Producto{
 		Temperatura = 0;
 	}
 	
-	public ProductoCongelados(Date fechaCaducidad, int NumLote, float Temperatura) {
+	public ProductoCongelados(String fechaCaducidad, int NumLote, float Temperatura) {
 		super(fechaCaducidad, NumLote);
 		this.Temperatura=Temperatura;
 	}

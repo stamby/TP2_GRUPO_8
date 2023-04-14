@@ -11,7 +11,7 @@ public class ProductoRefrigerados extends Producto{
 		codigoOrganismo = "0";
 	}
 
-	public ProductoRefrigerados(Date fechaCaducidad, int NumLote,String codigoOrganismo) {
+	public ProductoRefrigerados(String fechaCaducidad, int NumLote,String codigoOrganismo) {
 		super(fechaCaducidad, NumLote);
 		this.codigoOrganismo= codigoOrganismo;
 	}
